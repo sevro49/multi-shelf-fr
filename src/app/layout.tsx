@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "MultiShelf",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
+        <Navbar />
         {children}
       </body>
     </html>
