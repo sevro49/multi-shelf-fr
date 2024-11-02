@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "MultiShelf",
@@ -18,6 +20,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <BackToTop />
+        <Footer />
       </body>
     </html>
   );

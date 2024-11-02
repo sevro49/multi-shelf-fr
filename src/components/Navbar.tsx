@@ -30,7 +30,7 @@ const navbar_links = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-red-600 py-2 px-4 xl:px-[22rem] flex items-center justify-between w-full">
+    <nav className="fixed bg-red-600 py-2 px-4 xl:px-[22rem] flex items-center justify-between w-full">
 
       {/* Mobile navbar */}
       <Sheet >
@@ -81,15 +81,15 @@ const Navbar = () => {
           </li>
           ))}
         </ul>
-        <div className="">
-          <DropdownMenu>
+        <div>
+          <DropdownMenu modal={false}>
             <DropdownMenuTrigger className="flex items-center font-semibold gap-2 focus-visible:outline-none focus-visible:ring-0">
               <Avatar className="w-8 h-8">
                 <AvatarImage src="https://github.com/sevro49.png"/>
                 <AvatarFallback>S49</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="-translate-x-4 xl:-translate-x-12 bg-white">
+            <DropdownMenuContent  className="-translate-x-4 xl:-translate-x-12 bg-white">
               <DropdownMenuItem><Icon icon="carbon:user" className="text-xl me-2"/> Profile</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem><Icon icon="material-symbols:logout" className="text-xl me-2"/> Log Out</DropdownMenuItem>
