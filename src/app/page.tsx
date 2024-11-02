@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <div>
+    <main className="min-h-screen pt-16">
       This is home page
-    </div>
+    </main>
   );
 }
